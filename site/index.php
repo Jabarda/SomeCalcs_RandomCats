@@ -20,14 +20,14 @@
 		<?php
 			function F ($i)
 			{
-				if ($i>100000) return 0;
+				if ($i>10000000) return 0;
 				return 1 + $i / (2.0 * $i + 1) * F($i + 1);
 			}
 			$answer=2*F(1);
 			echo "Ответ: " ;
-			echo '<input type=\"text\"  id=\"Answer\" value=\"'.$answer.'\"></div>'; ?>\
+			echo '<input type=\"text\" readonly=\"true\" id=\"Answer\" value=\"'.$answer.'\"></div>'; ?>\
 		');
-		$('#Answer').value=$('#Answer').value.toFixed($('#hard').value);
+		document.getElementById('Answer').value=parseFloat(document.getElementById('Answer').value).toFixed(parseInt(document.getElementById('hard').value));
 	});
   </script>
   <script src="js/bootstrap.min.js"></script>
