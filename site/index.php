@@ -9,7 +9,7 @@
   <div>
 	Так как у нас сайт про вычисления и котиков, посчитаем число ПИ по формуле PI = 2 * (1 + 1/3 * (1 + 2/5 * (1 + 3/7 * (...))))</br>
 	Введите точность: 
-	<input type="text" name="hard" /></br>
+	<input type="text" id="hard" /></br>
 	<input type="button" id="RecCount" value="Посчитать!" />
 	<div id=PiAnswer></div>
 	
@@ -25,10 +25,9 @@
 			}
 			$answer=2*F(1);
 			echo "Ответ: " ;
-			echo '<div hidden=\"true\" id=\"Answer\" value=\"'.$answer.'\"></div>'; ?>\
+			echo '<input type=\"text\"  id=\"Answer\" value=\"'.$answer.'\"></div>'; ?>\
 		');
-		$('#Answer').value=$('#Answer').value.toFixed($('#Answer').value);
-		$('#Answer').hidden=false;
+		$('#Answer').value=$('#Answer').value.toFixed($('#hard').value);
 	});
   </script>
   <script src="js/bootstrap.min.js"></script>
