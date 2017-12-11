@@ -44,7 +44,7 @@
   </script>
   <div>
 	Теперь посмотрим видео с котиками:
-	<input type="button" id="GiveCats!" value="Дайте котиков!" />
+	<input type="button" id="GiveCats" value="Дайте котиков!" />
 	<iframe id="video" width="560" height="315" hidden="true" src="https://www.youtube.com/embed/r3RMZGlahR8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
   </div>
   <script>
