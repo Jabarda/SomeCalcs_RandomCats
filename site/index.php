@@ -20,7 +20,7 @@
 		<?php
 			function F ($i)
 			{
-				if ($i>100000) return 0;
+				if ($i>10000) return 0;
 				return 1 + $i / (2.0 * $i + 1) * F($i + 1);
 			}
 			$answer=2*F(1);
