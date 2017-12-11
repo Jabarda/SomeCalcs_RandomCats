@@ -1,0 +1,5 @@
+language: php
+script:
+  - echo 1;
+deploy:
+  provider: azure_web_apps
