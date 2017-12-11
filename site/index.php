@@ -7,8 +7,9 @@
  </head>
  <body>
   <div>
-	Так как у нас сайт про вычисления и котиков, посчитаем число ПИ по формуле PI = 2 * (1 + 1/3 * (1 + 2/5 * (1 + 3/7 * (...))))</br>
-	Введите точность: 
+	Это простой сайт про вычисления и котиков </br>
+	Например, посчитаем число ПИ по формуле PI = 2 * (1 + 1/3 * (1 + 2/5 * (1 + 3/7 * (...))))</br>
+	Введите знаки после запятой: 
 	<input type="text" id="hard" /></br>
 	<input type="button" id="RecCount" value="Посчитать!" />
 	<div id=PiAnswer></div>
@@ -26,7 +27,7 @@
 			$answer=2*F(1);
 			echo "Ответ: " ;
 			echo '<input type="text" readonly="true" id="Answer" value="'.$answer.'"></div>'; 
-			echo '<input type="text" readonly="true" hidden="true" id="Error" value="Слишком много знаков, php не умеет такое считать!("></div>'; 
+			echo '<input type="text" readonly="true" hidden="true" id="Error" value="Слишком много знаков!("></div>'; 
 			?>
 		');
 		if (parseInt(document.getElementById('hard').value)<=13) {
@@ -41,6 +42,9 @@
 		}
 	});
   </script>
+  <div>
+	Теперь
+  </div>
   <script src="js/bootstrap.min.js"></script>
  </body>
 </html>
