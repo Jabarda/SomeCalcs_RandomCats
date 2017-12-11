@@ -23,6 +23,7 @@
 			echo "Im here!";
 			$max = (int)$_POST["hard"];
 			echo $max;
+			echo rand(5, 15);
 			echo "Im here!";
 			function F ($i)
 			{
