@@ -56,6 +56,7 @@
 			echo 'document.getElementById("video").hidden=false;';
 		?>
 	});
+	</script>
   <script src="js/bootstrap.min.js"></script>
  </body>
 </html>
