@@ -25,9 +25,19 @@
 			}
 			$answer=2*F(1);
 			echo "Ответ: " ;
-			echo '<input type=\"text\" readonly=\"true\" id=\"Answer\" value=\"'.$answer.'\"></div>'; ?>\
+			echo '<input type=\"text\" readonly=\"true\" id=\"Answer\" value=\"'.$answer.'\"></div>'; 
+			echo '<input type=\"text\" readonly=\"true\" hidden=\"true\" id=\"Error\" value=\"Слишком много знаков, php не умеет такое считать!(\"></div>'; 
+			?>\
 		');
-		document.getElementById('Answer').value=parseFloat(document.getElementById('Answer').value).toFixed(parseInt(document.getElementById('hard').value));
+		if (parseInt(document.getElementById('hard').value)<=13)
+			document.getElementById('Answer').hidden=false;
+		document.getElementById('Error').hidden=true;
+			document.getElementById('Answer').value=parseFloat(document.getElementById('Answer').value).toFixed(parseInt(document.getElementById('hard').value));
+		else
+		{
+			document.getElementById('Answer').hidden=true;
+			document.getElementById('Error').hidden=false;
+		}
 	});
   </script>
   <script src="js/bootstrap.min.js"></script>
