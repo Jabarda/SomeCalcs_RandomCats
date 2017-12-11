@@ -18,6 +18,7 @@
 	$('#RecCount').click(function(){
 		$('#PiAnswer').html('\
 		<?php
+			echo "Im here!";
 			$max = $_GET["hard"];
 			echo $max;
 			function F ($i)
@@ -26,7 +27,7 @@
 				return 1 + $i / (2.0 * $i + 1) * F($i + 1);
 			}
 			$answer="Ответ: " + 2*F(1);
-		echo $answer; ?>\
+			echo $answer; ?>\
 		');
 	});
   </script>
