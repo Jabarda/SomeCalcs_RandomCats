@@ -43,8 +43,19 @@
 	});
   </script>
   <div>
-	Теперь
+	Теперь посмотрим видео с котиками:
+	<input type="button" id="GiveCats!" value="Дайте котиков!" />
+	<iframe id="video" width="560" height="315" hidden="true" src="https://www.youtube.com/embed/r3RMZGlahR8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
   </div>
+  <script>
+	$('#GiveCats').click(function(){
+		<?php
+			echo 'var array= ["https://www.youtube.com/watch?v=NsUWXo8M7UA", "https://www.youtube.com/watch?v=bpVbYauEkGY", "https://www.youtube.com/watch?v=r3RMZGlahR8", "https://www.youtube.com/watch?v=6U_XREUMOAU", "https://www.youtube.com/watch?v=tGTe6rnvWF4", "https://www.youtube.com/watch?v=sVi1go-hqh0", "https://www.youtube.com/watch?v=t8tjT9MA7yU", "https://www.youtube.com/watch?v=3EIbWjkimAs"];';
+			echo 'var randomUrl=array[Math.floor(Math.random() * (7 - 0))];';
+			echo 'document.getElementById("video").src=randomUrl;';
+			echo 'document.getElementById("video").hidden=false;';
+		?>
+	};
   <script src="js/bootstrap.min.js"></script>
  </body>
 </html>
