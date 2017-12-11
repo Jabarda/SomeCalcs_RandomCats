@@ -9,7 +9,7 @@
   <div>
 	Так как у нас сайт про вычисления и котиков, посчитаем число ПИ по формуле PI = 2 * (1 + 1/3 * (1 + 2/5 * (1 + 3/7 * (...))))</br>
 	Введите точность: 
-	<input type=number name=hard >
+	<input type=number name=hard>
 	<input type=button id=RecCount>
 	<div id=PiAnswer></div>
 	
@@ -18,14 +18,15 @@
 	$('#RecCount').click(function(){
 		$('#PiAnswer').html('\
 		<?php
-			$max = $_POST["hard"];
+			$max = $_GET["hard"];
+			echo $max;
 			function F ($i)
 			{
 				if ($i>$max) return 0;
 				return 1 + $i / (2.0 * $i + 1) * F($i + 1);
 			}
 			$answer="Ответ: " + 2*F(1);
-		echo $answer ?>\
+		echo $answer; ?>\
 		');
 	});
   </script>
