@@ -27,7 +27,7 @@
 			echo "Ответ: " ;
 			echo '<input type=\"text\" readonly=\"true\" id=\"Answer\" value=\"'.$answer.'\"></div>'; 
 			echo '<input type=\"text\" readonly=\"true\" hidden=\"true\" id=\"Error\" value=\"Слишком много знаков, php не умеет такое считать!(\"></div>'; 
-			?>\
+			?>
 		');
 		if (parseInt(document.getElementById('hard').value)<=13)
 			document.getElementById('Answer').hidden=false;
