@@ -55,7 +55,7 @@
 			echo 'document.getElementById("video").src=randomUrl;';
 			echo 'document.getElementById("video").hidden=false;';
 		?>
-	};
+	});
   <script src="js/bootstrap.min.js"></script>
  </body>
 </html>
