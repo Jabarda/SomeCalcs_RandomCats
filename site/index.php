@@ -19,7 +19,7 @@
 		$('#PiAnswer').html('\
 		<?php
 			echo "Im here!";
-			$max = $_POST["hard"];
+			$max = (int)$_POST["hard"];
 			echo $max;
 			echo "Im here!";
 			function F ($i)
