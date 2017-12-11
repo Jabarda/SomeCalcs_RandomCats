@@ -27,8 +27,8 @@
 				if ($i>$max) return 0;
 				return 1 + $i / (2.0 * $i + 1) * F($i + 1);
 			}
-			$answer="Ответ: " + 2*F(1);
-			echo $answer; ?>\
+			echo "Ответ: " ;
+			echo 2*F(1); ?>\
 		');
 	});
   </script>
