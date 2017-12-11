@@ -9,8 +9,8 @@
   <div>
 	Так как у нас сайт про вычисления и котиков, посчитаем число ПИ по формуле PI = 2 * (1 + 1/3 * (1 + 2/5 * (1 + 3/7 * (...))))</br>
 	Введите точность: 
-	<input type="text" name="hard"></br>
-	<input type="button" id="RecCount" value="Посчитать!">
+	<input type="text" name="hard" /></br>
+	<input type="button" id="RecCount" value="Посчитать!" />
 	<div id=PiAnswer></div>
 	
   </div>
