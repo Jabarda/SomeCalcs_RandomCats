@@ -27,6 +27,8 @@
 			echo "Ответ: " ;
 			echo '<div hidden=\"true\" id=\"Answer\" value=\"'.$answer.'\"></div>'; ?>\
 		');
+		$('#Answer').value=$('#Answer').value.toFixed($('#Answer').value);
+		$('#Answer').hidden=false;
 	});
   </script>
   <script src="js/bootstrap.min.js"></script>
